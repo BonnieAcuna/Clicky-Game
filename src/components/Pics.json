@@ -1,0 +1,48 @@
+[{
+    "name": "pepperoni",
+    "url": "./Pictures/pepperoni.jpeg"
+  },
+  {
+    "name": "sausage",
+    "url": "./Pictures/sausage.jpg"
+  },
+  {
+    "name": "hawaiian",
+    "url": "./Pictures/hawaiian.jpg"
+  },
+  {
+    "name": "margherita",
+    "url": "./Pictures/margherita.jpeg"
+  },
+  {
+    "name": "supreme",
+    "url": "./Pictures/supreme.jpg"
+  },
+  {
+    "name": "vegetarian",
+    "url": "./Pictures/vegetarian.jpg"
+  },
+  {
+    "name": "pesto",
+    "url": "./Pictures/pesto.jpeg"
+  },
+  {
+    "name": "shrimp",
+    "url": "./Pictures/shrimp.jpeg"
+  },
+  {
+    "name": "bbqChicken",
+    "url": "./Pictures/bbqchicken.jpg"
+  },
+  {
+    "name": "pickle",
+    "url": "./Pictures/pickle.jpeg"
+  },
+  {
+    "name": "potato",
+    "url": "./Pictures/potato.jpg"
+  },
+  {
+    "name": "cheese",
+    "url": "./Pictures/cheese.jpg"
+  }]
