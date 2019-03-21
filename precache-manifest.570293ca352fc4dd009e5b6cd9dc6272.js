@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "208b49698e1fc680e4659748190a002c",
-    "url": "/Clicky-Game/static/media/vegetarian.208b4969.jpg"
+    "revision": "fb2944186b0472a7c8438d39cbbccd2f",
+    "url": "/Clicky-Game/static/media/supreme.fb294418.jpg"
   },
   {
-    "revision": "7e37e575fbe01796a332",
-    "url": "/Clicky-Game/static/css/main.9d3688a0.chunk.css"
+    "revision": "61fd721845453fa181ce",
+    "url": "/Clicky-Game/static/css/main.83e9d6f4.chunk.css"
   },
   {
     "revision": "fab82da4d9420c34bc57",
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/Clicky-Game/static/media/margherita.1daf3837.jpeg"
   },
   {
-    "revision": "fb2944186b0472a7c8438d39cbbccd2f",
-    "url": "/Clicky-Game/static/media/supreme.fb294418.jpg"
+    "revision": "61fd721845453fa181ce",
+    "url": "/Clicky-Game/static/js/main.0855d36e.chunk.js"
   },
   {
-    "revision": "7e37e575fbe01796a332",
-    "url": "/Clicky-Game/static/js/main.9666dee4.chunk.js"
+    "revision": "208b49698e1fc680e4659748190a002c",
+    "url": "/Clicky-Game/static/media/vegetarian.208b4969.jpg"
   },
   {
     "revision": "f1079cc4d35fa8b3522d57e4ec10bec0",
@@ -64,11 +64,7 @@ self.__precacheManifest = [
     "url": "/Clicky-Game/static/media/cheese.9fde44e9.jpg"
   },
   {
-    "revision": "88c6030e59ed5ee57e6bda43235d707c",
-    "url": "/Clicky-Game/static/media/pizzabackground.88c6030e.jpg"
-  },
-  {
-    "revision": "5e9887eec0d04d831e46522b30ebe519",
+    "revision": "eba9afd194fbe0174af11cba403d4b28",
     "url": "/Clicky-Game/index.html"
   }
 ];
