@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Body from "./components/Body";
 import Footer from "./components/Footer";
 import Image from "./components/Image";
 import Pics from "./components/Pics.json";
@@ -28,7 +27,7 @@ class App extends Component {
     message: 'Click an image to begin'
   };
   
-  shuffleArray = (array) => {
+  shufflePics = (array) => {
     let picArray = Pics;
     for (let i = picArray.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -37,18 +36,18 @@ class App extends Component {
     return picArray
   }
 
-  pickImg = (name) => {
+  clickImage = (pizza) => {
     console.log("Clicked!!");
     let picked = this.state.picked;
     
-    if (picked.indexOf(name) === -1) {
+    if (picked.indexOf(pizza) === -1) {
       this.setState({
-        picked: picked.concat(name),
+        picked: picked.concat(pizza),
         correct: this.state.correct + 1,
         topscore: this.state.correct + 1 > this.state.topscore ? this.state.correct + 1 : this.state.topscore,
-        message: "Correct: Good choice!" 
+        message: "Correct! Pick Another Pizza!" 
       })
-      this.shuffleArray();
+      this.shufflePics();
     }
     else {
       this.setState({
@@ -59,8 +58,8 @@ class App extends Component {
     }
   }
 
-  imgSwitch = (name) => {
-    switch (name) {
+  changedImage = (pizza) => {
+    switch (pizza) {
       case "pepperoni":
         return `${pepperoni}`
       case "sausage":
@@ -94,13 +93,17 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar correct={this.state.correct} topscore={this.state.topscore} message={this.state.message}/>
-        <Header />
-        <Main>
-          {this.shuffleArray(Pics).map(image => (
-            <Image src={this.imgSwitch(image.name)} name={image.name} key={image.name} pickImg={this.pickImg}  />
+        <Navbar 
+        correct={this.state.correct} 
+        topscore={this.state.topscore} 
+        message={this.state.message}/>
+        
+        
+        <Body>
+          {this.shufflePics(Pics).map(image => (
+            <Image src={this.changedImage(image.name)} name={image.name} key={image.name} clickImage={this.clickImage}  />
           ))}
-        </Main>
+        </Body>
         <Footer />
       </div>
     );

@@ -31,3 +31,58 @@
     transform: rotate(360deg);
   }
 }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  margin-top: 200px;
+}
+
+.thumbnail {
+  height: 250px;
+  width: 250px;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.navbar-brand {
+  font-size: 42px;
+}
+
+.message {
+  margin-right: 20px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .image-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image-grid {
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 7px;
+  grid-row-gap: 7px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .image-grid {
+  grid-template-columns: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  }
+}
+

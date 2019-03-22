@@ -2,11 +2,11 @@ import React from 'react';
 
 const Footer = () => (
 
-<footer className="footer bg-info">
-    <div className="container">
-      <span className="text-dark">Clicky Game!
+<footer className="footer bg-dark">
+    
+      <span className="text-light ml-2">Clicky Game!
       </span>
-  </div>
+  
 </footer>
 
 )
