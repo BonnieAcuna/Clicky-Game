@@ -37,7 +37,7 @@ class App extends Component {
   }
 
   clickImage = (pizza) => {
-    console.log("Clicked!!");
+    
     let picked = this.state.picked;
     
     if (picked.indexOf(pizza) === -1) {
